@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css"href="css.css">
+
+    <title>Turkish Dictation</title>
+</head>
+<body>
+    <script src="diff_match_patch.js"></script>
+    <div class="header">
+            <img class ="logoPic" src="images/icons/turkish.png">
+            <h1>TURKISH LINGO</h1>
+        <div class="header-right">
+            <a href="home.html">Home</a>
+            <a href="alphabet.html">Alphabet</a>
+            <a class="active" href="index.html">Dictation</a>
+        </div>
+      </div>
+      <div class="row">
+    <div class="column">
+        <div class="audioBox">
+            <ul id="playlist">
+                <li class="current-song"><a href="audio/clip1.mp3">Clip 1</a></li>
+                <li><a href="audio/clip2.mp3">Clip 2</a></li>
+                <li><a href="audio/clip3.mp3">Clip 3</a></li>
+                <li><a href="audio/clip4.mp3">Clip 4</a></li>
+                <li><a href="audio/clip5.mp3">Clip 5</a></li>
+                <li><a href="audio/clip6.mp3">Clip 6</a></li>
+                <li><a href="audio/clip7.mp3">Clip 7</a></li>
+                <li><a href="audio/clip8.mp3">Clip 8</a></li>
+                <li><a href="audio/clip9.mp3">Clip 9</a></li>
+                <li><a href="audio/clip10.mp3">Clip 10</a></li>
+                <li><a href="audio/clip11.mp3">Clip 11</a></li>
+                <li><a href="audio/clip12.mp3">Clip 12</a></li>
+                <li><a href="audio/clip13.mp3">Clip 13</a></li>
+                <li><a href="audio/clip14.mp3">Clip 14</a></li>
+                <li><a href="audio/clip15.mp3">Clip 15</a></li>
+            </ul>
+    </div>
+    <audio src="" controls id="audioPlayer">
+        Sorry, your browser doesn't support html5!
+    </audio>
+    <div class="instructions">
+        <h3>Keyboard Shortcuts</h3>
+            <p>Type c=, g=, s= to type ç, ğ, ş</p>
+            <p>Type o=, u= to type ö, ü</p>
+            <p>Type i=, I= to add or delete the point: ı, İ</p>
+    </div>
+</div>
+
+
+    <div class="column">
+        <div class="showAnswer"></div>
+        <textarea placeholder="Type your answer here"></textarea>
+        <div class="top">
+            <button class="circle" data-name="ç">ç</button>
+            <button class="circle" data-name="ğ">ğ</button>
+            <button class="circle" data-name="ı">ı</button>
+            <button class="circle" data-name="ö">ö</button>
+            <button class="circle" data-name="ş">ş</button>
+            <button class="circle" data-name="ü">ü</button>
+        </div>
+        <div class="bottom">
+            <button class="circle" data-name="Ç">Ç</button>
+            <button class="circle" data-name="Ğ">Ğ</button>
+            <button class="circle" data-name="İ">İ</button>
+            <button class="circle" data-name="Ö">Ö</button>
+            <button class="circle" data-name="Ş">Ş</button>
+            <button class="circle" data-name="Ü">Ü</button>
+        </div>
+        <button class="button">CHECK</button>
+    </section>
+</div>
+</div>
+    <footer> </footer>
+
+    <script type="text/javascript" src="js.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+
+    <!-- <script src="audioPlayer.js"></script> -->
+    <script>
+            // loads the audio player
+        audioPlayer();
+    </script>
+</body>
+</html>
